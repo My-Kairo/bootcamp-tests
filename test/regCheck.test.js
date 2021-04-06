@@ -1,8 +1,8 @@
 describe('regCheck function', function(){
-	it('should return true for GP', function(){
-		assert.equal(regCheck('GP'), false)
+	it('should check if a registration number is for GP then return true', function(){
+		assert.equal(regCheck('DV 23 NB GP', 'GP'), true)
 	})
-	it('should return false for CJ', function(){
-		assert.equal(regCheck('CJ'), false)
+	it('should return false if the reg is not for GP ', function(){
+		assert.equal(regCheck('DV 23 LP GP', 'MP'), false)
 	})
 })

@@ -6,4 +6,8 @@ function findItemsOver(fruitList, thresh){
       }
       }
       return overThresh;
+    
     }
+
+
+    
